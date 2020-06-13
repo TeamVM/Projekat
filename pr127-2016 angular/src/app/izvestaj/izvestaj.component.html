@@ -1,0 +1,48 @@
+<div class="main">
+    <form>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+          <table class="table table-image list-of-image">
+            <thead>
+              <tr>
+              <th>
+                Spisak Vozila
+              </th>
+              </tr>
+              <tr>           
+                <th scope="col">Sifra vozila</th>
+                <th scope="col">Status vozila</th>
+                <th scope="col">Period</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{rentaCar.idAuta}}</td>
+                <td>{{izvestajTable.status}}</td>
+                <td>{{izvestajTable.period}}</td>
+              </tr>
+            </tbody>
+          </table>   
+          </div>
+        </div>
+      </div>       
+      </form>
+      <div id="intro" class="view">
+        <div class="form-row">
+          <div class="form-group col-md-10">
+            <br>
+            <h1 >Prosecna ocena servisa: {{rentaCar.ocena}}</h1>
+          </div>
+          <div class="form-group col-md-12">
+          <br>
+            <label for="adresa">Ostvareni prihod servisa:
+              <br>Nedeljno:{{izvestajTable.prihodN}}
+            <br>Mesecno:{{izvestajTable.prihodM}}
+          <br>Godisnje: {{izvestajTable.prihodG}}</label>
+          </div>
+          <th>
+            <!-- <button type="button" style="width: 120px;" class="btn btn-success"><i class="fas fa-edit" routerLink= "/company1re">Back</i></button> -->
+          </th>
+        </div>
+    </div>

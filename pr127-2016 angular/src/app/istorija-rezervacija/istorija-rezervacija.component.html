@@ -1,0 +1,38 @@
+<div class="main">
+    <form>
+        <div class="container">
+            <div class="row" >
+              <div class="col-12">
+              <table class="table table-image list-of-image">
+                <thead>
+                    <tr>
+                      <th>
+                        Istorija rezervacija
+                      </th>
+                      </tr>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Slika</th>
+                    <th scope="col">Ime</th>
+                    <th scope="col">Godiste</th>
+                    <th scope="col">Ocena</th>
+                    <th scope="col">Cena</th>
+                    <th scope="col">sifra</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let rentaTable of rentaCompany.listaAuta"><!--ovde sam ti dodao da prolazi kroz listu auta i puni tabelu-->
+                  <tr>
+                    <td class="w-25">
+                      <img src={{rentaTable.img}} class="img-fluid img-thumbnail" alt="img">
+                    </td>
+                    <td>{{rentaTable.ime}}</td>
+                    <td>{{rentaTable.godiste}}</td>
+                    <td>{{rentaTable.ocena}}</td>
+                    <td>{{rentaTable.cena}}</td>
+                    <td>{{rentaTable.sifra}}</td>
+                  </tr>
+                </tbody>
+              </table>   
+              </div>
+            </div>
+          </div>

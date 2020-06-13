@@ -1,0 +1,82 @@
+
+<form (ngSubmit) ="add()" #addForm="ngForm">
+    <section class="section">
+  
+      <div class="container">
+           
+            
+              <div class="field">
+                  <label class="label" style="color: black;">IDAuta</label>
+                  <input style="width: 50%;" type="text" name="IDAuta"
+                   class="input" [(ngModel)]= "model.IDAuta">
+   
+              </div>
+  
+  
+              <div class="field">
+                  <label class="label" style="color: black;">Img</label>
+                  <input style="width: 50%;" type="text" name="Img"
+                   class="input" [(ngModel)]= "model.Img">
+   
+              </div>
+  
+              <div class="field">
+                  <label class="label" style="color: black;">Ime </label>
+                  <input style="width: 50%;" type="text" name="Ime"
+                   class="input" [(ngModel)]= "model.Ime">
+   
+              </div>
+  
+              <div class="field">
+                  <label class="label" style="color: black;">Godiste </label>
+                  <input style="width: 50%;" type="text" name="Godiste"
+                   class="input" [(ngModel)]= "model.Godiste">
+   
+              </div>
+  
+              <div class="field">
+                  <label class="label" style="color: black;">Ocena </label>
+                  <input style="width: 50%;" type="text" name="Ocena"
+                   class="input" [(ngModel)]= "model.Ocena">
+   
+              </div>
+              <div class="field">
+                <label class="label" style="color: black;">Cena </label>
+                <input style="width: 50%;" type="text" name="Cena"
+                 class="input" [(ngModel)]= "model.Cena">
+ 
+            </div>
+            <div class="field">
+                <label class="label" style="color: black;">ImeKompanije </label>
+                <input style="width: 50%;" type="text" name="ImeKompanije"
+                 class="input" [(ngModel)]= "model.ImeKompanije">
+ 
+            </div>
+            <div class="field">
+                <label class="label" style="color: black;">Lokacija </label>
+                <input style="width: 50%;" type="text" name="Lokacija"
+                 class="input" [(ngModel)]= "model.Lokacija">
+ 
+            </div>
+            <div class="field">
+                <label class="label" style="color: black;">DatumOd </label>
+                <input style="width: 50%;" type="text" name="DatumOd"
+                 class="input" [(ngModel)]= "model.DatumOd">
+ 
+            </div>
+            <div class="field">
+                <label class="label" style="color: black;">DatumDo </label>
+                <input style="width: 50%;" type="text" name="DatumDo"
+                 class="input" [(ngModel)]= "model.DatumDo">
+ 
+            </div>
+      
+              <button type="submit"  class="button is-success">
+                 <strong>Add</strong></button>
+                 <button  class="button is-danger" [routerLink]="['/carcompanies']" routerLinkActive="router-link-active" style="margin-left: 45px;">
+                  <strong>Back</strong></button>
+          
+      
+      </div>
+  </section>
+  </form>

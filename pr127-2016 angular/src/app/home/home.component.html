@@ -1,0 +1,57 @@
+<!-- <form (ngSubmit)="search()" #searchFrom="ngForm"> -->
+  <form #searchFrom="ngForm">
+  <section class="section">
+  <div id="intro">
+
+    <!-- Divider -->
+    <hr class="hr-light">
+
+    <!-- Description -->
+    <h2 class="subheadline" style="margin-left: 15px;">Pretraga za Rent-a Car</h2>
+    <div class="form-group col-md-2" style="margin-left: 15px;">
+      ******Lokacija*******<input type="checkbox" name="location" [(ngModel)]="model.location">  
+      ******Ime******<input type="checkbox" name="name" [(ngModel)]="model.name">
+    </div> 
+    <br>
+    <br>
+    <div class="form-group col-md-2">
+      <input type="text" id="cf-1" placeholder="Upisite ime ili lokaciju" class="form-control" style="margin-left: 15px;"
+        name="location" class="input" [(ngModel)]="model.searchText">
+    </div>
+    <br>
+    <div class="form-group col-md-2" style="margin-left: -300px;">
+      <br>
+      <label for="cf-2">Odaberite datum za uzimanje vozila</label>
+      <input type="text" bsDatepicker id="cf-2" placeholder="Izaberite datum" class="form-control datepicker px-3"
+        name="dateFrom" class="input" [(ngModel)]="model.dateFrom">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group col-md-2" style="margin-left: -325px;">
+      <br>
+      <label for="cf-3">Odaberite datum za vracanje vozila</label>
+      <input type="text" bsDatepicker id="cf-3" placeholder="Izaberite datum" class="form-control datepicker px-3"
+        name="dateTo" class="input" [(ngModel)]="model.dateTo">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="form-group col-md-2" style="margin-left: 10px;">
+      <br>
+      <label for="cf-3">Unesite cenu(u eurima)</label>
+      <input type="number" id="cf-3" class="form-control datepicker px-3" name="price" class="input"
+        [(ngModel)]="model.price">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="button" style="margin-left: 25px;">
+      <!-- <button type="submit" style="background-color: turquoise;" routerLink="/rentafilter">Pretrazi</button> -->
+      <button type="button" (click)="search()">Pretrazi</button>
+    </div>
+  </div>
+</section>
+</form>

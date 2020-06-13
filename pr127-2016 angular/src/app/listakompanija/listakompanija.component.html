@@ -1,0 +1,8 @@
+<div  style="margin-left:50px; margin-top: 50px" >
+  
+    <ng-container *ngFor="let carCompany of carCompanies">
+      <div class="card pointer" >
+      <a (click)="viewCarCompany(carCompany.id)">{{carCompany.name}}</a> <br />
+      </div>
+    </ng-container>
+  </div>

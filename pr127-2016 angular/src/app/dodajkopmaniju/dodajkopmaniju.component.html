@@ -1,0 +1,56 @@
+
+  <section class="section">
+
+    <div class="container">
+        <form (ngSubmit) ="add()" #addForm="ngForm"> 
+          
+            <div class="field">
+                <label class="label" style="color:black;">Id</label>
+                <input style="width: 50%;" type="text" name="Id"
+                 class="input" [(ngModel)]= "model.Id">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label" style="color:black;">Ime</label>
+                <input style="width: 50%;" type="text" name="Name"
+                 class="input" [(ngModel)]= "model.Name">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label" style="color:black;">Promo opis</label>
+                <input style="width: 50%;" type="text" name="Promo"
+                 class="input" [(ngModel)]= "model.Promo">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label" style="color:black;">Filijale </label>
+                <input style="width: 50%;" type="text" name="Filijale"
+                 class="input" [(ngModel)]= "model.Filijale">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label" style="color:black;">Ocena </label>
+                <input style="width: 50%;" type="text" name="ocena"
+                 class="input" [(ngModel)]= "model.ocena">
+ 
+            </div>        
+            
+            <div class="field">
+                <label class="label" style="color:black;">Adresa </label>
+                <input style="width: 50%;" type="text" name="Adresa"
+                 class="input" [(ngModel)]= "model.Adresa">
+ 
+            </div>        
+            <button type="submit" [disabled]="addForm.invalid" class="button is-success">
+                <strong>Add</strong></button>
+                <button  class="button is-danger" [routerLink]="['/home']" routerLinkActive="router-link-active" style="margin-left: 45px;">
+                 <strong>Back</strong></button>
+         </form>
+     
+     </div>
+ </section>
+ 

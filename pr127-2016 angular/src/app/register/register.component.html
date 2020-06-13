@@ -1,0 +1,81 @@
+
+<form  (ngSubmit)="register()" #registerForm="ngForm">
+  <label>
+    <p class="label-txt">NAME</p>
+    <input type="text" class="input"  name="Name" [(ngModel)]= "model.Name" #NameInput="ngModel" required>
+    <div class="help is error" *ngIf= "NameInput.invalid && NameInput.touched">name is empty
+    <div class="line-box">
+      <div class="line"></div>
+  </div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER YOUR USERNAME</p>
+    <input type="text" class="input" name="username"
+    [(ngModel)]= "model.Username" #UsernameInput="ngModel" required>
+    <div class="help is error" *ngIf= "UsernameInput.invalid && UsernameInput.touched">Username is empty
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER YOUR LASTNAME</p>
+    <input type="text" class="input" name="Lastname"
+    [(ngModel)]= "model.Lastname" #LastnameInput="ngModel" required>
+    <div class="help is error" *ngIf= "LastnameInput.invalid && LastnameInput.touched">Lastname is empty
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER YOUR PASWSWORD</p>
+    <input type="text"  class="input"  name="Password"
+    [(ngModel)]= "model.Password" #PasswordInput = "ngModel" required>
+    <div class="help is error" *ngIf= "PasswordInput.invalid && PasswordInput.touched">Password is empty
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+    </div>
+    <label>
+        <p class="label-txt">Confirm password</p>
+        <input type="text" class="input">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">City</p>
+        <input type="text" class="input"  name="City"
+        [(ngModel)]= "model.City" #CityInput = "ngModel" required>
+        <div class="help is error" *ngIf= "CityInput.invalid && CityInput.touched">City is empty
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">E-mail</p>
+        <input type="text" class="input"  name="Email"
+        [(ngModel)]= "model.Email" #EmailInput = "ngModel" required>
+        <div class="help is error" *ngIf= "EmailInput.invalid && EmailInput.touched">Email is empty
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">Phone number</p>
+        <input type="text" class="input"  name="PhoneNumber"
+        [(ngModel)]= "model.PhoneNumber" #PhoneNumberInput = "ngModel" required>
+        <div class="help is error" *ngIf= "PhoneNumberInput.invalid && PhoneNumberInput.touched">PhoneNumber is empty
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+        </div>
+      </label>
+
+  </label>
+  <button type="submit">submit</button>
+</form>

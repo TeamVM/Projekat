@@ -1,0 +1,50 @@
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-image list-of-image">
+          <thead>
+            <tr>
+              <th>
+                Istorija rezervacija
+              </th>
+            </tr>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Slika</th>
+              <th scope="col">Ime</th>
+              <th scope="col">Godiste</th>
+              <th scope="col">Ocena</th>
+              <th scope="col">Cena</th>
+              <th scope="col">sifra</th>
+              <th scope="col">Datum Od</th>
+              <th scope="col">Datum Do</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let rentaTable of listOfCars">
+            <!--ovde sam ti dodao da prolazi kroz listu auta i puni tabelu-->
+            <tr>
+              <td>
+                <form>
+                  <!-- <input type="text" value="{{rentaTable.idAuta}}" hidden name="idAuta"/> -->
+                  <button type="button" (click)="rezervisi(rentaTable)" style="width: 80px;" class="btn btn-primary"><i
+                      class="fas fa-edit">Rezervisi</i></button>
+                </form>
+              </td>
+              <td class="w-25">
+                <img src={{rentaTable.img}} class="img-fluid img-thumbnail" alt="img">
+              </td>
+              <td>{{rentaTable.ime}}</td>
+              <td>{{rentaTable.godiste}}</td>
+              <td>{{rentaTable.ocena}}</td>
+              <td>{{rentaTable.cena}}</td>
+              <td>{{rentaTable.idAuta}}</td>
+              <td>{{rentaTable.datumOd}}</td>
+              <td>{{rentaTable.datumDo}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

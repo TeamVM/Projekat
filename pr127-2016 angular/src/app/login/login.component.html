@@ -1,0 +1,53 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Include the above in your HEAD tag -->
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<div class="main">
+ <form  (ngSubmit)="login()" #loginForm="ngForm">
+    
+    <div class="container">
+        <div class="row vertical-offset-100">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Please sign in</h3>
+                     </div>
+                      <div class="panel-body">
+                        
+                        <fieldset>
+                              
+                                <input class="form-control" placeholder="Username" name="Username" type="text"
+                                [(ngModel)]= "model.Username" #UsernameInput="ngModel" required>
+                                <div class="help is error" *ngIf= "UsernameInput.invalid && UsernameInput.touched">Username is empty
+                           
+                            </div>
+                          
+                                <input class="form-control" placeholder="Password" name="Password" type="password" 
+                                [(ngModel)]= "model.Password" #PasswordInput = "ngModel" required>
+                                <div class="help is error" *ngIf= "PasswordInput.invalid && PasswordInput.touched">Password is empty>
+                            
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+                                </label>
+                            </div>
+                            <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+                        </fieldset>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+ </div>

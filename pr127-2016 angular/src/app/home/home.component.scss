@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.headline, .subheadline{
+  color:  white;
+}
+#intro {
+  height: 100vh;
+}
+
+
+
+ #intro {
+  background: url("../../assets/homee.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
