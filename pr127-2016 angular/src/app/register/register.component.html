@@ -31,7 +31,7 @@
   </label>
   <label>
     <p class="label-txt">ENTER YOUR PASWSWORD</p>
-    <input type="text"  class="input"  name="Password"
+    <input type="password"  class="input"  name="Password"
     [(ngModel)]= "model.Password" #PasswordInput = "ngModel" required>
     <div class="help is error" *ngIf= "PasswordInput.invalid && PasswordInput.touched">Password is empty
     <div class="line-box">
@@ -40,7 +40,7 @@
     </div>
     <label>
         <p class="label-txt">Confirm password</p>
-        <input type="text" class="input">
+        <input type="password" class="input">
         <div class="line-box">
           <div class="line"></div>
         </div>

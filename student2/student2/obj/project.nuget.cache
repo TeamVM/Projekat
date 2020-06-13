@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ju8xyBgoaznbP8Egx4M2Ix6cN3hxCdKNL80SlljWKNHIJhhiY3O/m6Y2QOuq69ipPE0/s5s614f99osxKsHapg==",
+  "dgSpecHash": "uAfFjSnL6qCE6ayf1yBjwOdGr39Rhmj9kVOXVvB6XByHRfHNV4KuXRMjAeUVRmqRi4H/pDt3YnQ/D+Pm6K88Yg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gligoric\\Desktop\\web proejkat\\novo\\student2\\student2\\student2.csproj",
+  "projectFilePath": "D:\\Veljko\\Repo\\Projekat\\student2\\student2\\student2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gligoric\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Gligoric\\.nuget\\packages\\microsoft.aspnet.providers.core\\2.0.0\\microsoft.aspnet.providers.core.2.0.0.nupkg.sha512",

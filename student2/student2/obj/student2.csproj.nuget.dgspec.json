@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gligoric\\Desktop\\web proejkat\\novo\\student2\\student2\\student2.csproj": {}
+    "D:\\Veljko\\Repo\\Projekat\\student2\\student2\\student2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gligoric\\Desktop\\web proejkat\\novo\\student2\\student2\\student2.csproj": {
+    "D:\\Veljko\\Repo\\Projekat\\student2\\student2\\student2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gligoric\\Desktop\\web proejkat\\novo\\student2\\student2\\student2.csproj",
+        "projectUniqueName": "D:\\Veljko\\Repo\\Projekat\\student2\\student2\\student2.csproj",
         "projectName": "student2",
-        "projectPath": "C:\\Users\\Gligoric\\Desktop\\web proejkat\\novo\\student2\\student2\\student2.csproj",
+        "projectPath": "D:\\Veljko\\Repo\\Projekat\\student2\\student2\\student2.csproj",
         "packagesPath": "C:\\Users\\Gligoric\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gligoric\\Desktop\\web proejkat\\novo\\student2\\student2\\obj\\",
+        "outputPath": "D:\\Veljko\\Repo\\Projekat\\student2\\student2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
