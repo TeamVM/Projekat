@@ -416,7 +416,6 @@ D:\Veljko\Repo\Projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\l
 D:\Veljko\Repo\Projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Veljko\Repo\Projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Veljko\Repo\Projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csprojAssemblyReference.cache
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.AssemblyInfoInputs.cache
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.AssemblyInfo.cs
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csproj.CoreCompileInputs.cache
@@ -428,3 +427,4 @@ D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\staticwebasset
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.dll
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.pdb
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.genruntimeconfig.cache
+D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csprojAssemblyReference.cache

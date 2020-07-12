@@ -72,7 +72,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
+ //   AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,

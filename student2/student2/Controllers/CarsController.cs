@@ -47,9 +47,7 @@ namespace student2.Controllers
                 });
             } 
             else
-            {
-                //Ova linija valja, treba da je odkomentarises i obrises onu ispod nje kad updatujes model
-                //searchResult = _context.CarsModels.Where(x => (x.Lokacija == car.SearchText && Int32.Parse(x.Cena) <= car.Price && DateTime.Parse(x.DatumOd) >= car.DateFrom && DateTime.Parse(x.DatumDo) <= car.DateTo && x.Rezervisan == false)).ToList();
+            { 
                 cars.ForEach(x =>
                 {
                     if (x.Lokacija == car.SearchText && Int32.Parse(x.Cena) <= car.Price && (DateTime.Now - DateTime.Parse(x.DatumOd)).TotalMilliseconds >= (DateTime.Now - dateFrom).TotalMilliseconds && (DateTime.Now - DateTime.Parse(x.DatumDo)).TotalMilliseconds <= (DateTime.Now - dateTo).TotalMilliseconds && x.Rezervisan == false)
@@ -62,7 +60,7 @@ namespace student2.Controllers
             return searchResult;
         }
 
-        //Dodaj u model auta da li je rezervisan
+        
         [HttpPost]
         [Route("ReserveCar")]
         public bool ReserveCar(CarModels car)

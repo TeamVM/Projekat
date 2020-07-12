@@ -15,12 +15,15 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+    <ul class="navbar-nav mr-auto" >
+      <li class="nav-item active" *ngIf="!authService.loggedIn()">
         <a class="navbar-brand" routerLink="./register">Registracija</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item"  *ngIf="!authService.loggedIn()">
         <a class="nav-link" routerLink="./login">Prijava</a>
+      </li>
+      <li class="nav-item"  *ngIf="authService.loggedIn()">
+        <a class="nav-link" (click)="odjavise()">Odjava</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -33,13 +36,13 @@
       <li class="nav-item dropdown">
         <a class="nav-link" routerLink="./listakompanija">Lista Kompanija</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item"  *ngIf="authService.loggedIn()">
         <a class="nav-link" routerLink="./istorija-rezervacija"> Istorija rezervacija</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item"  *ngIf="authService.loggedIn()">
         <a class="nav-link" routerLink="./dodajkompaniju"> Dodaj Renta-Car Kompaniju</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item"  *ngIf="authService.loggedIn()">
         <a class="nav-link" routerLink="./dodajauto"> Dodaj Auto</a>
       </li>
     </ul>
