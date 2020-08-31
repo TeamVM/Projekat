@@ -6,6 +6,7 @@ import { Car } from '../_models/Car';
 import { ltLocale } from 'ngx-bootstrap/chronos/i18n/lt';
 import { CarCompanyService } from '../services/carcompany.service';
 import { CarService } from '../services/car.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-company1re',
@@ -13,10 +14,17 @@ import { CarService } from '../services/car.service';
   styleUrls: ['./company1re.component.scss']
 })
 export class Company1reComponent implements OnInit {
-  editButton=true;
-  editCompany=true;
+  editButton=false;
+  editCompany=false;
+  updateButton=false;
+  obrisiButton= false;
+  rezervisiButton=false;
   idComp=null;
+  rentadmin = false;
+  headadmin = false;
+  korisnik = false;
 
+  ukupnaCenaAuta = [];
 
   rentaCompany: RentaCompany= {
       id: '',
@@ -25,27 +33,72 @@ export class Company1reComponent implements OnInit {
       promo: '',
       filijale:'',
       ocena: '' ,
-      listaAuta:[]
+      listaAuta:[],
   };
-  constructor(private route: ActivatedRoute, private sannitizer: DomSanitizer, private service: CarCompanyService, private carService: CarService, private router:Router) { }
+  tipUsera:string;
+  constructor(private route: ActivatedRoute, 
+    private service: CarCompanyService,
+     private carService: CarService, 
+     private router:Router, private authService: AuthService,
+     private sanitizer : DomSanitizer) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(res => { 
-      console.log(res.id)
       this.idComp=res.id;
-      
-      // console.log('res: ', res);
-      this.service.getCompanyById(res.id).subscribe((res) => {  this.rentaCompany = res;   } );
-      
+      this.service.getCompanyById(res.id).subscribe((res) => {  this.rentaCompany = res; 
+
+      } );
     });
-    console.log(this.idComp);
-      
-      console.log(this.rentaCompany.id);
-      console.log(this.rentaCompany);
+
+    this.authService.data.subscribe(_res => { 
+      this.tipUsera = _res;
+      console.log(_res);
+      if(_res == "rentadmin") { 
+        this.editButton = true;
+        this.updateButton = true;
+        this.obrisiButton = true;
+        this.rentadmin = true;
+        this.rezervisiButton = true;
+        this.headadmin = false;
+        this.korisnik = true;
+      }
+      else if(_res == "HeadAdmin") { 
+        this.headadmin = true;
+        this.editButton = false;
+        this.updateButton = false;
+        this.obrisiButton = true;
+        this.rentadmin = true;
+        this.rezervisiButton = true;
+        this.korisnik = true;
+      }
+      else if(_res == "Korisnik") { 
+        this.headadmin = false;
+        this.editButton = false;
+        this.updateButton = false;
+        this.obrisiButton = false;
+        this.rentadmin = false;
+        this.rezervisiButton = true;
+        this.korisnik = true;
+      }
+      else { 
+        this.headadmin = false;
+        this.editButton = false;
+        this.updateButton = false;
+        this.obrisiButton = false;
+        this.rentadmin = false;
+        this.korisnik = false;
+        this.rezervisiButton = false;
+      }
+    });
+
   }
 
-  rezervisi(idAuta: string) {
-    this.carService.reserveCar(idAuta).subscribe((result) => { 
+  public getSafeUrl(url: string) { 
+    return this.sanitizer.bypassSecurityTrustUrl(url);
+  }
+
+  rezervisi(auto: any) {
+    this.carService.reserveCar(auto).subscribe((result) => { 
       if (result) {
         this.router.navigate(['/rezervisaoauto']);
       } else {
@@ -78,5 +131,15 @@ export class Company1reComponent implements OnInit {
     this.service.editCompany(this.rentaCompany).subscribe((result)=>{
       console.log(this.rentaCompany);
     })
+  }
+
+  changedDate(index: number) {
+    if (this.rentaCompany.listaAuta[index].datumOd != undefined && this.rentaCompany.listaAuta[index].datumDo != undefined) {
+      const oneDay = 24 * 60 * 60 * 1000; // hours * minutes * seconds * millisecondss
+      const dateFrom = new Date(this.rentaCompany.listaAuta[index].datumOd);
+      const dateTo = new Date(this.rentaCompany.listaAuta[index].datumDo);
+      let brojDana = Math.round(Math.abs((dateTo.getTime() - dateFrom.getTime()) / oneDay));
+      this.ukupnaCenaAuta[index] = Number(this.rentaCompany.listaAuta[index].cena) * brojDana;
+    }
   }
 }    

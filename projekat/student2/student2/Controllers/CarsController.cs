@@ -37,20 +37,22 @@ namespace student2.Controllers
 
             if (car.Name)
             {
-                //searchResult = _context.CarsModels.Where(x => (x.Ime == car.SearchText && Int32.Parse(x.Cena) <= car.Price && DateTime.Parse(x.DatumOd) >= car.DateFrom && DateTime.Parse(x.DatumDo) <= car.DateTo && x.Rezervisan == false)).ToList();
+             //   searchResult = _context.CarsModels.Where(x => x.Ime == car.SearchText && Int32.Parse(x.Cena) <= car.Price && DateTime.Parse(x.DatumOd) >= dateFrom && DateTime.Parse(x.DatumDo) <= dateTo && x.Rezervisan == false).ToList();
+              
                 cars.ForEach(x =>
                 {
-                    if (x.Ime == car.SearchText && Int32.Parse(x.Cena) >= car.Price && DateTime.Parse(x.DatumOd) >= dateFrom && DateTime.Parse(x.DatumDo) <= dateTo && x.Rezervisan == false)
+                    if (x.Ime == car.SearchText && Int32.Parse(x.Cena) <= car.Price  && x.Rezervisan == false)
                     {
                         searchResult.Add(x);
                     }
                 });
+               
             } 
             else
             { 
                 cars.ForEach(x =>
                 {
-                    if (x.Lokacija == car.SearchText && Int32.Parse(x.Cena) <= car.Price && (DateTime.Now - DateTime.Parse(x.DatumOd)).TotalMilliseconds >= (DateTime.Now - dateFrom).TotalMilliseconds && (DateTime.Now - DateTime.Parse(x.DatumDo)).TotalMilliseconds <= (DateTime.Now - dateTo).TotalMilliseconds && x.Rezervisan == false)
+                    if (x.Lokacija == car.SearchText && Int32.Parse(x.Cena) <= car.Price && x.Rezervisan == false)
                     {
                         searchResult.Add(x);
                     }
@@ -77,6 +79,8 @@ namespace student2.Controllers
                 List<CarModels> cars = _context.Cars.Where(x => x.IDAuta == car.IDAuta).ToList();
                 cars.ForEach(x =>
                 {
+                    x.DatumOd = car.DatumOd;
+                    x.DatumDo = car.DatumDo;
                     x.Rezervisan = true;
                 });
 
@@ -87,6 +91,37 @@ namespace student2.Controllers
                 return false;
             }
         }
+
+        [HttpPost]
+        [Route("ReserveSpeedCar")]
+        public bool ReserveSpeedCar(CarModels car)
+        {
+            SpeedCar trazeniAuto = _context.SpeedCars.FirstOrDefault(x => x.IDAuta == car.IDAuta);
+
+            if (trazeniAuto == null)
+            {
+                return false;
+            }
+
+            if (!trazeniAuto.Rezervisan)
+            {
+                List<SpeedCar> cars = _context.SpeedCars.Where(x => x.IDAuta == car.IDAuta).ToList();
+                cars.ForEach(x =>
+                {
+                    x.DatumOd = car.DatumOd;
+                    x.DatumDo = car.DatumDo;
+                    x.Rezervisan = true;
+                });
+
+                _context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
 
         [HttpPost]
         [Route("DeleteCar")]
@@ -104,19 +139,37 @@ namespace student2.Controllers
 
 
         [Route("Cars/AddCar")]
-        public async void AddCar(CarModels carToAdd)
+        public async Task AddCar(CarModels carToAdd)
         {
             if (carToAdd != null)
             {
+                carToAdd.DatumDo = DateTime.Now.AddDays(150).ToShortDateString();
                 await _context.AddAsync(carToAdd);
+            }
+        }
+
+        [HttpPost]
+        [Route("SaveCarGrade")]
+        public void SaveCarGrade(CarModels carToAdd)
+        {
+            if (carToAdd != null)
+            {
+                var car = this._context.Cars.FirstOrDefault(x => x.IDAuta == carToAdd.IDAuta);
+                car.Ocena = carToAdd.Ocena;
+
+                this._context.SaveChanges();
+
+                //Samo koriguj nacin na koji racunas prosecnu ocenu
+                //double ocena = Double.Parse(car.Ocena);
+                //ocena = 
             }
         }
 
         // GET: api/<CarsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<CarModels> Get()
         {
-            return new string[] { "value1", "value2" };
+            return this._context.Cars.ToList();
         }
 
         // GET api/<CarsController>/5
@@ -143,5 +196,31 @@ namespace student2.Controllers
         public void Delete(int id)
         {
         }
+
+
+   
+        [HttpGet]
+        [Route("SpeedCars")]
+        public async Task<ActionResult<List<SpeedCar>>> GetAllSpeedCars()
+        {
+            List<SpeedCar> car = _context.SpeedCars.ToList();
+            return car;
+        }
+
+        [HttpGet]
+        [Route("GetSpeedCar/{id}")]
+        public async Task<ActionResult<SpeedCar>> GetSpeedCar(string id)
+
+        {
+            //var user = new ApplicationUser();
+            var car = await _context.SpeedCars.FindAsync(id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            return car;
+        }
+
     }
 }

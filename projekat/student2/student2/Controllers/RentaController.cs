@@ -37,7 +37,7 @@ namespace student2.Controllers
         {
             RentaHelp rentCompany = new RentaHelp();
             RentaCompany company = _context.RentaCompanies.Where(x => x.Id == id).FirstOrDefault();
-            rentCompany.ListaAuta = _context.CarsModels.Where(x => x.IDKompanije == company.Id).ToList();
+            rentCompany.ListaAuta = _context.CarsModels.Where(x => x.IDKompanije == company.Id && x.Rezervisan == false).ToList();
             rentCompany.Name = company.Name;
             rentCompany.ocena = company.ocena;
             rentCompany.Promo = company.Promo;
@@ -78,6 +78,8 @@ namespace student2.Controllers
         [Route("AddCar")]
         public ActionResult AddCar(CarHelp carHelp)
         {
+            carHelp.DatumOd = DateTime.UtcNow.Date.ToShortDateString();
+
             var kompanija = _context.RentaCompanies.FirstOrDefault(x => x.Name == carHelp.ImeKompanije);
 
             if (kompanija == null)
@@ -94,7 +96,7 @@ namespace student2.Controllers
                 Ocena = carHelp.Ocena,
                 Cena = carHelp.Cena,
                 Lokacija = carHelp.Lokacija,
-                DatumDo = carHelp.DatumDo,
+                DatumDo = DateTime.Now.AddDays(150).ToShortDateString(),
                 DatumOd = carHelp.DatumOd,
                 Rezervisan = false,
                 IDKompanije = kompanija.Id,
@@ -102,6 +104,41 @@ namespace student2.Controllers
             };
 
             _context.CarsModels.Add(car);
+            _context.SaveChanges();
+
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("AddSpeedCar")]
+        public async Task<ActionResult> AddSpeedCar(CarHelp carHelp)
+        {
+            carHelp.DatumOd = DateTime.UtcNow.Date.ToShortDateString();
+
+            var kompanija = _context.RentaCompanies.FirstOrDefault(x => x.Name == carHelp.ImeKompanije);
+
+            if (kompanija == null)
+            {
+                return NotFound();
+            }
+
+            var car = new Models.SpeedCar
+            {
+                IDAuta = Guid.NewGuid().ToString(),
+                Ime = carHelp.Ime,
+                Img = carHelp.Img,
+                Godiste = carHelp.Godiste,
+                Ocena = carHelp.Ocena,
+                Cena = carHelp.Cena,
+                Lokacija = carHelp.Lokacija,
+                DatumDo = carHelp.DatumDo,
+                DatumOd = carHelp.DatumOd,
+                Rezervisan = false,
+                IDKompanije = kompanija.Id,
+                //ListaAuta = new List<Models.CarModels>()
+            };
+
+            _context.SpeedCars.Add(car);
             _context.SaveChanges();
 
             return Ok();
@@ -140,6 +177,24 @@ namespace student2.Controllers
             }
 
             return CreatedAtAction("EditCarCompany", new { id = company.Id }, company);
+        }
+
+
+        [HttpPost]
+        [Route("SaveCarCompanyGrade")]
+        public void SaveCarCompanyGrade(RentaCompany company)
+        {
+            if (company != null)
+            {
+                var companyFromDB = this._context.RentaCompanies.FirstOrDefault(x => x.Id == company.Id);
+                companyFromDB.ocena = company.ocena;
+
+                this._context.SaveChanges();
+
+                //Samo koriguj nacin na koji racunas prosecnu ocenu
+                //double ocena = Double.Parse(car.Ocena);
+                //ocena = 
+            }
         }
     }
 }

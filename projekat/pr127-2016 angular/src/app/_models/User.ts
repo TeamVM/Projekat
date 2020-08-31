@@ -22,4 +22,6 @@ export class RegUser{
 
     
     email:string;
+
+    type: string;
 }

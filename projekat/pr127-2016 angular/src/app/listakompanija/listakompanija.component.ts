@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CarCompanyService } from '../services/carcompany.service';
 import { Router } from '@angular/router';
 import { RentaCompany } from '../_models/rentaCompany';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-listakompanija',
@@ -11,9 +12,10 @@ import { RentaCompany } from '../_models/rentaCompany';
 export class ListakompanijaComponent implements OnInit {
 
   carCompanies: RentaCompany[];
-  constructor(private service: CarCompanyService, private router:Router) { }
+  constructor(private service: CarCompanyService, private router:Router, private authService: AuthService) { }
 
   ngOnInit(): void {
+    this.authService.isHeadAdmin();
     this.service.getCompanies().subscribe((result) => { this.carCompanies = result; });
   }
 

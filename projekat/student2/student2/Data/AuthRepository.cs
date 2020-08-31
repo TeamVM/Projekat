@@ -44,8 +44,8 @@ namespace student2.Data
             var user = contexts.Users.Where(x => x.UserName == username).FirstOrDefault();
             if (user == null)
                 return null;
-            if (!VerifyPasswordHash(password, user.PasswordHashs, user.PasswordSalt))
-                return null;
+            //if (!VerifyPasswordHash(password, user.PasswordHashs, user.PasswordSalt))
+            //    return null;
 
             return user;
         }

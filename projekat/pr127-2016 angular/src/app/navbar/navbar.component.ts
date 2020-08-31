@@ -9,9 +9,13 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  tipUsera:string;
   constructor(public authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
+     this.authService.data.subscribe(_res => { 
+       this.tipUsera = _res;
+     });
   }
 
   odjavise() { 

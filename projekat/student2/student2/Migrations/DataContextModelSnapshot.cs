@@ -84,6 +84,46 @@ namespace student2.Migrations
                     b.ToTable("RentaCompanies");
                 });
 
+            modelBuilder.Entity("student2.Models.SpeedCar", b =>
+                {
+                    b.Property<string>("IDAuta")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Cena")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DatumDo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DatumOd")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Godiste")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IDKompanije")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ime")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Img")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Lokacija")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ocena")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Rezervisan")
+                        .HasColumnType("bit");
+
+                    b.HasKey("IDAuta");
+
+                    b.ToTable("SpeedCars");
+                });
+
             modelBuilder.Entity("student2.Models.User", b =>
                 {
                     b.Property<string>("Id")

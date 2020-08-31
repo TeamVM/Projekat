@@ -19,4 +19,9 @@ export class DodajautoComponent implements OnInit {
     this.service.addCar(this.model).subscribe((result)=>{console.log("POVEZAO");})
   }
 
+  addSpeedCar(){
+    console.log(this.model);
+    this.service.addSpeedCar(this.model).subscribe((result)=>{console.log("POVEZAO");})
+  }
+
 }

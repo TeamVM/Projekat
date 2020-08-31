@@ -428,3 +428,147 @@ D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.dll
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.pdb
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.genruntimeconfig.cache
 D:\Veljko\Repo\Projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csprojAssemblyReference.cache
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.exe
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.deps.json
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.runtimeconfig.json
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.runtimeconfig.dev.json
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.pdb
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Web.Providers.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Web.Services3.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csprojAssemblyReference.cache
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.AssemblyInfoInputs.cache
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.AssemblyInfo.cs
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csproj.CoreCompileInputs.cache
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.RazorTargetAssemblyInfo.cache
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csproj.CopyComplete
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\staticwebassets\student2.StaticWebAssets.Manifest.cache
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\staticwebassets\student2.StaticWebAssets.xml
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.dll
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.pdb
+C:\Users\gligoric\Desktop\web 2 projekat\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.genruntimeconfig.cache
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.exe
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.deps.json
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.runtimeconfig.json
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.runtimeconfig.dev.json
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\student2.pdb
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Web.Providers.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Microsoft.Web.Services3.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.AssemblyInfoInputs.cache
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.AssemblyInfo.cs
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.RazorTargetAssemblyInfo.cache
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csproj.CopyComplete
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\staticwebassets\student2.StaticWebAssets.Manifest.cache
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\staticwebassets\student2.StaticWebAssets.xml
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.dll
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.pdb
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.genruntimeconfig.cache
+C:\Users\Aleksandar\Desktop\web veba\projekat\student2\student2\obj\Debug\netcoreapp3.1\student2.csprojAssemblyReference.cache

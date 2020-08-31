@@ -11,6 +11,8 @@ namespace student2.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<CarModels>  Cars { get; set; }
+
+        public DbSet<SpeedCar> SpeedCars { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<RentaCompany> RentaCompanies { get; set; }
         public DbSet<CarModels> CarsModels { get; set; }

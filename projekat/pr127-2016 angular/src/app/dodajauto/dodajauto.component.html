@@ -1,14 +1,13 @@
 
-<form (ngSubmit) ="add()" #addForm="ngForm">
+<form #addForm="ngForm">
     <section class="section">
   
       <div class="container">
            
             
               <div class="field">
-                  <label class="label" style="color: black;">IDAuta</label>
                   <input style="width: 50%;" type="text" name="IDAuta"
-                   class="input" [(ngModel)]= "model.IDAuta">
+                   class="input" [(ngModel)]= "model.IDAuta" hidden>
    
               </div>
   
@@ -58,7 +57,7 @@
                  class="input" [(ngModel)]= "model.Lokacija">
  
             </div>
-            <div class="field">
+            <!-- <div class="field">
                 <label class="label" style="color: black;">DatumOd </label>
                 <input style="width: 50%;" type="text" name="DatumOd"
                  class="input" [(ngModel)]= "model.DatumOd">
@@ -69,13 +68,16 @@
                 <input style="width: 50%;" type="text" name="DatumDo"
                  class="input" [(ngModel)]= "model.DatumDo">
  
-            </div>
+            </div> -->
       
-              <button type="submit"  class="button is-success">
+              <button type="submit"  class="button is-success" (click)="add()">
                  <strong>Add</strong></button>
                  <button  class="button is-danger" [routerLink]="['/carcompanies']" routerLinkActive="router-link-active" style="margin-left: 45px;">
                   <strong>Back</strong></button>
-          
+                  <button type="submit" class="button is-success"  (click)="addSpeedCar()">
+                    <strong>AddSpeedCar</strong></button>
+                    <button  class="button is-danger"  [routerLink]="['/carcompanies']" routerLinkActive="router-link-active" style="margin-left: 45px;">
+          </button>
       
       </div>
   </section>

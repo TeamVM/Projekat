@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using student2.Data;
@@ -14,12 +16,18 @@ namespace student2.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly DataContext _context;
+
+        public UserController(DataContext context)
+        {
+            _context = context;
+        }
 
         // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<string> Search()
+        public List<User> Get()
         {
-            return new string[] { "value1", "value2" };
+            return this._context.Users.Where(x => x.Type != "HeadAdmin").ToList();
         }
 
         // GET api/<UserController>/5
@@ -31,8 +39,15 @@ namespace student2.Controllers
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] List<User> users)
         {
+            users.ForEach(x =>
+            {
+                var user = this._context.Users.FirstOrDefault(y => y.UserName == x.UserName);
+                user.Type = x.Type;
+
+                this._context.SaveChanges();
+            });
         }
 
         // PUT api/<UserController>/5

@@ -31,6 +31,10 @@ import { RezervisaoAutoComponent } from './rezervisao-auto/rezervisao-auto.compo
 import { NijeRezervisaoAutoComponent } from './nije-rezervisao-auto/nije-rezervisao-auto.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { AlertifyService } from './services/alertify.service';
+import { AuthGuardHeadAmin } from './services/auth.guard.headadmin';
+import { AurhGuardRentaAdmin } from './services/auth.guard.rentacaradmin';
+import { BazaKorisnikaComponent } from './baza-korisnika/baza-korisnika.component';
+import { BrzaRezerervacijaAutaComponent } from './brza-rezerervacija-auta/brza-rezerervacija-auta.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -46,8 +50,10 @@ const routes: Routes = [
   { path: "dodajkompaniju" , component:DodajkopmanijuComponent, canActivate: [AuthGuard]},
   { path: "dodajauto", component:DodajautoComponent, canActivate: [AuthGuard]},
   { path: "nijerezervisaoauto", component:NijeRezervisaoAutoComponent, canActivate: [AuthGuard]},
-  { path: "rezervisaoauto", component:RezervisaoAutoComponent, canActivate: [AuthGuard]},
-  { path: "listakompanija", component:ListakompanijaComponent}
+  { path: "rezervisaoauto", component:RezervisaoAutoComponent},
+  { path: "listakompanija", component:ListakompanijaComponent},
+  {path: "bazakorisnika", component:BazaKorisnikaComponent},
+  { path: "brzarezervacija", component:BrzaRezerervacijaAutaComponent}
 
 ]
 @NgModule({
@@ -68,6 +74,8 @@ const routes: Routes = [
     ListakompanijaComponent,
     RezervisaoAutoComponent,
     NijeRezervisaoAutoComponent,
+    BazaKorisnikaComponent,
+    BrzaRezerervacijaAutaComponent,
   ],
   imports: [
     BrowserModule,

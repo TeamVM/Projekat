@@ -2,7 +2,10 @@
   
     <ng-container *ngFor="let carCompany of carCompanies">
       <div class="card pointer" >
-      <a (click)="viewCarCompany(carCompany.id)">{{carCompany.name}}</a> <br />
+      <a (click)="viewCarCompany(carCompany.id)">{{carCompany.name}} <br>
+      {{carCompany.promo}}<br>
+      {{carCompany.adresa}}
+      </a> <br />
       </div>
     </ng-container>
   </div>

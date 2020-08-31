@@ -34,6 +34,10 @@ export class CarCompanyService{
     deleteCompany(id: string){
         return this.http.post(this.base_url+"/DeleteCarCompany", id);
     }
+
+    saveCompanyGrade(company: RentaCompany){
+        return this.http.post(this.base_url + "/SaveCarCompanyGrade", company);
+    }
 }
 
 

@@ -1,0 +1,32 @@
+<div class="table-wrapper-scroll-y my-custom-scrollbar" name="tabela">
+  
+    <table class="table table-bordered table-striped mb-0" style="width: 60%;" align="center">
+      <thead>
+        <tr>
+   
+          <th scope="col">Slika</th>
+          <th scope="col">Ime</th>
+          <th scope="col">Godiste</th>
+          <th scope="col">Ocena</th>
+          <th scope="col">Cena</th>
+          <th scope="col">Lokacija</th>
+          <th scope="col">Ime Kompanije</th>            
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let car of cars" >
+          <td > <img src="{{car.img}}" alt="Image"></td>
+          <td align="center">{{car.ime}}</td>
+          <td align="center">{{car.godiste}}</td>
+          <td align="center">{{car.ocena}}</td>
+          <td align="center">{{car.cena}}</td>
+          <td align="center">{{car.lokacija}}</td>
+          <td align="center">{{car.imeKompanije}}</td>
+          <td><button class="button is-primary" (click)="Rezervisi(car.idAuta)" >Rezervisi</button>
+          </td>
+        </tr>
+       
+      </tbody>
+    </table>
+  
+  </div>

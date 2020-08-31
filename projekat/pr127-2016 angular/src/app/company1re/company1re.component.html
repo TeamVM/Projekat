@@ -5,46 +5,53 @@
               <div class="col-12">
               <table class="table table-image list-of-image">
                 <thead>
-                    <tr>
-                        <th>
-                        <button type="button" style="width: 100px;" class="btn btn-success"><i class="fas fa-edit">Dodaj(Admin)</i></button>   
-                      </th>
+                  <tr>
+                    <ng-container *ngIf="headadmin"> 
                       <th>
-                        <form><button type="button" (click)="obrisiKompaniju(rentaCompany)" style="width: 120px;" class="btn btn-success"><i class="fas fa-edit" routerLink="/listakompanija">Obrisi kompaniju</i></button></form>
+                        <button type="button" (click)="obrisiKompaniju(rentaCompany)" style="width: 120px;" class="btn btn-success"><i class="fas fa-edit" routerLink="/listakompanija">Obrisi kompaniju</i></button>
                       </th>
+                    </ng-container>
                       <th>
                         Spisak Vozila
                       </th>
+                      <ng-container *ngIf="korisnik"> 
                       <th>
-                        <button type="button" style="width: 80px;" class="btn btn-success"><i class="fas fa-edit" routerLink="/izvestaj">Izvestaj</i></button>
+                        <button type="button" style="width: 80px;" class="btn btn-success"><i class="fas fa-edit" routerLink="/izvestaj">Oceni</i></button>
                       </th>
+                    </ng-container>
                       </tr>
-                  <tr>
+                    <tr>
                     <th scope="col"></th>
                     <th scope="col">Slika</th>
                     <th scope="col">Ime</th>
                     <th scope="col">Godiste</th>
                     <th scope="col">Ocena</th>
                     <th scope="col">Cena</th>
+                    <th scope="col">Ukupna Cena</th>
                     <th scope="col">sifra</th>
                     <th scope="col">datumOd</th>
                     <th scope="col">datumDo</th>
                     <th scope="col">rezervisan</th>
                   </tr>
                 </thead>
-                <tbody *ngFor="let rentaTable of rentaCompany.listaAuta">
+                <tbody *ngFor="let rentaTable of rentaCompany?.listaAuta; let i = index;">
                   <tr>
                   <td>
-                      <form><button type="button" (click)="rezervisi(rentaTable)" style="width: 80px;" class="btn btn-primary"><i class="fas fa-edit">Rezervisi</i></button></form>
-                      <form><button type="button" (click)="obrisi(rentaTable)" style="width: 80px;" class="btn btn-danger"><i class="far fa-trash-alt">Obrisi</i></button></form>
+                    <label for="datumOd">Datum Od</label>
+                    <input type="date" name="datumOd" [(ngModel)]='rentaTable.datumOd' (change)='changedDate(i)'/>
+                    <label for="datumOd">Datum Do</label>
+                    <input type="date" name="datumDo" [(ngModel)]='rentaTable.datumDo' (change)='changedDate(i)'/>
+                      <form><button type="button" (click)="rezervisi(rentaTable)" *ngIf="rezervisiButton" style="width: 80px;" class="btn btn-primary"><i class="fas fa-edit">Rezervisi</i></button></form>
+                      <form><button type="button" (click)="obrisi(rentaTable)" *ngIf="obrisiButton" style="width: 80px;" class="btn btn-danger"><i class="far fa-trash-alt">Obrisi</i></button></form>
                   </td>
-                    <td class="w-25">
+                    <td>
                       <img src={{rentaTable.img}} class="img-fluid img-thumbnail" alt="img">
                     </td>
                     <td>{{rentaTable.ime}}</td>
                     <td>{{rentaTable.godiste}}</td>
                     <td>{{rentaTable.ocena}}</td>
                     <td>{{rentaTable.cena}}</td>
+                    <td>{{ukupnaCenaAuta[i]}}</td>
                     <td>{{rentaTable.idAuta}}</td>
                     <td>{{rentaTable.datumOd}}</td>
                     <td>{{rentaTable.datumDo}}</td>
@@ -88,7 +95,7 @@
       <label for="ocena">Ocenite servis:<br><input type="text" class="form-control"  name="ocena" [(ngModel)]="rentaCompany.ocena" value={{rentaCompany.ocena}} [disabled]="editCompany">  </label>
     </div>
     <button (click)="edit()" *ngIf="editButton">Edit</button>
-    <button (click)="update()" *ngIf="!editCompany">Update</button>
+    <button (click)="update()" *ngIf="!editCompany && updateButton">Update</button>
   </div>
     </div>
   </form>

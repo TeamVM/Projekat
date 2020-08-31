@@ -1,0 +1,32 @@
+<div class="main">
+    <form (ngSubmit)="save()" >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+          <table class="table table-image list-of-image">
+            <thead>
+              <tr>
+              <th>
+                Spisak korisnika
+              </th>
+              </tr>
+              <tr>           
+                <th scope="col">Ime korisnika</th>
+                <th scope="col">Uloga</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let user of users">
+              <td>{{user.userName}}</td>
+              <td>
+                <select name='typeOfUser' [(ngModel)]='user.type' [ngModelOptions]="{standalone: true}">
+                  <option *ngFor="let typeOfUser of typesOfUsers" [value]="typeOfUser">{{typeOfUser}}</option>
+                </select>
+              </td>
+            </tbody>
+          </table>   
+          </div>
+        </div>
+      </div>       
+      <button type="submit" class="btn-success btn-lg">Save</button>
+    </form>
+    </div>
